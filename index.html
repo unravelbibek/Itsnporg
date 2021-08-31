@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Designs/main.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="icon" type="image/png" href="assets/icons/itsnp.png" />
+
+  <title>ITSNP | Largest IT Community of Nepal</title>
+</head>
+
+<body>
+  <div class="preloader"></div>
+  <div class="main-wrapper">
+    <nav class="navbar">
+      <div class="itsnplogo">
+        <img src="/assets/icons/itsnp.png" alt="ITSNP_logo" />
+      </div>
+      <div class="itsnp-text">SNP</div>
+      <div class="page-indicator gradient-btn"><a href="https://www.facebook.com/groups/techforimpact" class="anchor"
+          target="_blank"><button>Home</button></a></div>
+      <div class="toggler" onclick="toggleMode()">
+        <div class="circle" id="circle1"></div>
+      </div>
+    </nav>
+    <section class="landing">
+      <div class="top-left-section">
+        <h1 class="main-heading green-clr">
+          <img id="hello-gif" src="assets/gif/hello_gif.gif" alt="hello" />
+          Hi , We’re ITSNP
+        </h1>
+        <p>
+          An organization working for welfare of
+          <span class="highlight">Techies In Nepal</span>
+        </p>
+        <p class="small-text">
+          ITSNP's goal is to present you with the best resources to learn
+          programming, design, blogging, and anything else besides technology
+          from the best industry experts.
+        </p>
+      </div>
+      <div class="top-right-section">
+        <p class="small-text">
+          A group of hardworking members is working behind the scenes to give
+          you with the greatest possible education and resources at no cost,
+          so please feel free to share the content we make and supply with
+          your interested friends.
+        </p>
+      </div>
+    </section>
+    <section class="be-part-of-us-section">
+      <h1 class="main-heading green-clr">Become a part of us</h1>
+      <div class="be-part-of-us-link-containers">
+        <div class="btn-container">
+          <span class="label-for-button">Apply for tutor</span>
+          <a href="https://tiny.cc/itsnptutor" target="_blank">
+            <div class="gradient-btn">
+              <button>Apply</button>
+            </div>
+          </a>
+        </div>
+        <div class="btn-container">
+          <span class="label-for-button">Apply for campus representative</span>
+          <a href="https://tiny.cc/itsnpcampusrepresentative" target="_blank">
+            <div class="gradient-btn">
+              <button>Apply</button>
+            </div>
+          </a>
+        </div>
+        <div class="btn-container">
+          <span class="label-for-button">Apply for moderator</span>
+          <a href="http://tiny.cc/itsnpmoderators" target="_blank">
+            <div class="gradient-btn">
+              <button>Apply</button>
+            </div>
+          </a>
+        </div>
+        <div class="btn-container">
+          <span class="label-for-button">Apply for workshop</span>
+          <a href="http://tiny.cc/itsnpworkshop" target="_blank">
+            <div class="gradient-btn">
+              <button>Apply</button>
+            </div>
+          </a>
+        </div>
+        <div class="btn-container">
+          <span class="label-for-button">Apply for parternship</span>
+          <a href="http://tiny.cc/itsnpappyforpartnership" target="_blank">
+            <div class="gradient-btn">
+              <button>Apply</button>
+            </div>
+          </a>
+        </div>
+        <div class="btn-container">
+          <span class="label-for-button">Book a Workshop with us</span>
+          <a href="http://tiny.cc/itsnpbookworkshop" target="_blank">
+            <div class="gradient-btn">
+              <button>Apply</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="what-we-do">
+      <div class="first textarea">
+        <h1 class="font-design green-clr">What we do?</h1>
+        <li>We offer Programming Workshops..</li>
+        <li>We assist students in obtaining scholarships.</li>
+        <li>We give away devices to those in need.</li>
+        <li>We provide career counseling.</li>
+        <li>We learn, teach, and grow together.</li>
+      </div>
+      <div class="workshop-img">
+        <img src="assets/ws/what_we_do.png" alt="Workshop session" />
+      </div>
+      <div class="second textarea">
+        <h1 class="font-design green-clr">What do we want to achieve?</h1>
+        <li>We want Nepal to be digitally literate.</li>
+        <li>To inspire young people to pursue careers in technology.</li>
+        <li>To develop skilled software engineers.</li>
+        <li>To bring a smile on the faces of Nepalese technologists.</li>
+      </div>
+      <div class="aim-img">
+        <img src="assets/ws/what_aim.png" alt="Our aim" />
+      </div>
+      <div class="third textarea">
+        <h1 class="font-design green-clr">
+          Join hands on our-mission
+          <i class="fas fa-hands-helping icon-size"></i>
+        </h1>
+        <p>Your tiny contribution can help us making a huge difference :)</p>
+        <a href="https://tiny.cc/itsnpdonate" target="_blank">
+          <div class="gradient-btn">
+            <button>Donate</button>
+          </div>
+        </a>
+        <h2>#Together_We_Can !</h2>
+      </div>
+      <div class="dream-img">
+        <img src="assets/ws/dream_img.png" alt="Our aim" />
+      </div>
+    </section>
+    <section class="team">
+      <h1 class="font-design green-clr">
+        Meet Our Team <i class="fas fa-user-friends icon-size"></i>
+      </h1>
+      <div class="team-img-container">
+        <div class="main-images small-img">
+          <img src="assets/team_img/sachit.png" alt="sachit" />
+          <img src="assets/team_img/aleen.png" alt="aleen" />
+          <img src="assets/team_img/neri.png" alt="neri" />
+          <img src="assets/team_img/prajita.png" alt="prajita" />
+          <img src="assets/team_img/nishant.png" alt="nishant" />
+        </div>
+        <div class="main-images small-img">
+          <img src="assets/team_img/samrid.png" alt="samrid" />
+          <img src="assets/team_img/bibek.png" alt="bibek" />
+
+          <img src="assets/team_img/abisam.png" alt="abisam" />
+          <img src="assets/team_img/mahesh.png" alt="mahesh" />
+        </div>
+        <div class="main-images small-img">
+          <img src="assets/team_img/dibash.png" alt="dibash" />
+          <img src="assets/team_img/banshaj.png" alt="banshaj" />
+          <img src="assets/team_img/neeraj.png" alt="neeraj" />
+          <img src="assets/team_img/niki.png" alt="niki" />
+          <img src="assets/team_img/nirjal.png" alt="nirjal" />
+        </div>
+        <div class="main-images small-img">
+          <img src="assets/team_img/smriti.png" alt="smriti" />
+          <img src="assets/team_img/snishant.png" alt="nishant" />
+          <img src="assets/team_img/unique.png" alt="unique" />
+          <img src="assets/team_img/santosh.png" alt="santosh" />
+        </div>
+      </div>
+      <div class="extra-info-with-link">
+        <p>
+          An association dedicated to the well-being of Nepalese
+          technologists.
+        </p>
+        <a href="#" class="gray-link" target="_blank">View our entire team</a>
+      </div>
+    </section>
+    <section class="donors-section">
+      <h1 class="font-design green-clr">
+        Our Donors <i class="fas fa-hand-holding-usd icon-size"></i>
+      </h1>
+      <p>
+        Our fuel to help us work effeciently, huge respect to all of them ✨
+        🎉.
+      </p>
+      <div class="donors">
+        <div class="donor-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" class="gold" />
+          <h3>ITSNP ORG</h3>
+          <p class="small-text">The leading tech Community in Nepal</p>
+        </div>
+        <div class="donor-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" class="silver" />
+          <h3>ITSNP ORG</h3>
+          <p class="small-text">The leading tech Community in Nepal</p>
+        </div>
+        <div class="donor-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" class="bronze" />
+          <h3>ITSNP ORG</h3>
+          <p class="small-text">The leading tech Community in Nepal</p>
+        </div>
+        <div class="donor-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" class="gold" />
+          <h3>ITSNP ORG</h3>
+          <p class="small-text">The leading tech Community in Nepal</p>
+        </div>
+        <div class="donor-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" class="silver" />
+          <h3>ITSNP ORG</h3>
+          <p class="small-text">The leading tech Community in Nepal</p>
+        </div>
+        <div class="donor-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" class="bronze" />
+          <h3>ITSNP ORG</h3>
+          <p class="small-text">The leading tech Community in Nepal</p>
+        </div>
+      </div>
+      <div class="extra-info-with-link">
+        <div>
+          <a href="https://tiny.cc/itsnpdonate" class="gray-link" target="blank">Donate</a>
+          <a href="#" class="gray-link" target="_blank">View all Donors</a>
+        </div>
+        <p class="small-text">
+          Note : Be our <span class="gol">Gold</span> ,
+          <span class="sil">Silver</span> and
+          <span class="bro">Bronze</span> fuel to get listed.
+        </p>
+      </div>
+    </section>
+    <section class="partners-section">
+      <h1 class="font-design green-clr">
+        Our Partners <i class="fas fa-handshake icon-size"></i>
+      </h1>
+      <p class="small-text">
+        Being a part of this group entails some of the best deals available
+        anywhere. We cooperate with businesses and communities to join forces
+        to create a positive influence in this community and to deliver the
+        best value to our community members. If you are an ITSNP member, take
+        advantage of one of our special offers.<a href="#" class="green-link">click here.</a>
+      </p>
+      <div class="partners">
+        <div class="partner-info small-img">
+          <img src="assets/partners/nestnepal.png" alt="nestnepal" />
+          <h3>Nest Nepal</h3>
+          <p class="small-text">Affordable Nepali Hosting Company</p>
+        </div>
+        <div class="partner-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" />
+          <h3>ITSNP</h3>
+          <p class="small-text">The Leading Tech community in Nepal</p>
+        </div>
+        <div class="partner-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" />
+          <h3>ITSNP</h3>
+          <p class="small-text">The Leading Tech community in Nepal</p>
+        </div>
+        <div class="partner-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" />
+          <h3>ITSNP</h3>
+          <p class="small-text">The Leading Tech community in Nepal</p>
+        </div>
+        <div class="partner-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" />
+          <h3>ITSNP</h3>
+          <p class="small-text">The Leading Tech community in Nepal</p>
+        </div>
+        <div class="partner-info small-img">
+          <img src="assets/partners/itsnp.png" alt="ITSNP_logo" />
+          <h3>ITSNP</h3>
+          <p class="small-text">The Leading Tech community in Nepal</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="quick-about">
+        <h1 class="green-clr">
+          Small Note <i class="far fa-comment-alt icon-size-arko"></i>
+        </h1>
+        <p>
+          ITSNP ORG is a community for tech enthusiasts. You may explore and
+          share your knowledge and perspectives on anything potentially
+          tech-related. We are a welcoming community for anybody interested in
+          technology, whether you are just starting out on your tech journey
+          or a traveler who already knows his way around the tech storm.
+        </p>
+      </div>
+      <div class="quick-links">
+        <h1 class="green-clr">
+          Quick Links <i class="fas fa-link icon-size-arko"></i>
+        </h1>
+        <a href="https://tiny.cc/itsnpdonate" class="gray-link" target="_blank">Donate</a>
+        <a href="https://tiny.cc/itsnpcampusrepresentative" class="gray-link" target="_blank">Contribute</a>
+        <a href="https://tiny.cc/itsnpwork" class="gray-link" target="_blank">How we work?</a>
+        <a href="https://tiny.cc/itsnpworkshop" class="gray-link" target="_blank">See on going workshops</a>
+      </div>
+      <div class="contact-links">
+        <h1 class="green-clr">
+          Contact Us <i class="fas fa-headset icon-size-arko"></i>
+        </h1>
+        <span><i class="fas fa-phone-square-alt"></i> Phone:
+          <a href="tel:+977-9861601174" class="gray-link">+977-9861601174</a></span>
+        <span><i class="fas fa-map-marker-alt"></i> Address:
+          <a href="https://www.google.com/maps/place/Kathmandu+44600/@27.7090319,85.2911131,13z/data=!3m1!4b1!4m5!3m4!1s0x39eb198a307baabf:0xb5137c1bf18db1ea!8m2!3d27.7172453!4d85.3239605"
+            target="_blank" class="gray-link">Kathmandu</a></span>
+        <span><i class="far fa-envelope"></i> Email:
+          <a href="mailto:itsnp.org@gmail.com" class="gray-link">itsnp.org@gmail.com</a><br /><a
+            href="mailto:admin@itsnp.org" class="gray-link">admin@itsnp.org</a></span>
+      </div>
+      <div class="social-links">
+        <h1 class="green-clr">
+          Stay Connected <i class="fas fa-users icon-size-arko"></i>
+        </h1>
+        <a href="https://www.facebook.com/groups/itstudentsofnepal" target="_blank" class="gray-link"><i
+            class="fab fa-facebook FB"></i> Facebook</a>
+        <a href="https://www.instagram.com/itsnporg/" target="_blank" class="gray-link"><i
+            class="fab fa-instagram insta"></i> Instagram</a>
+        <a href="https://www.youtube.com/c/itsnporg?sub_confirmation=1" target="_blank" class="gray-link"><i
+            class="fab fa-youtube YT"></i> Youtube</a>
+        <a href="https://discord.com/invite/gmzhmyZb8m" target="_blank" class="gray-link"><i
+            class="fab fa-discord DC"></i> Discord</a>
+        <a href="https://twitter.com/itsnporg" target="_blank" class="gray-link"><i class="fab fa-twitter TWT"></i>
+          Twitter</a>
+        <a href="https://github.com/itsnporg" target="_blank" class="gray-link"><i class="fab fa-github"></i> Github</a>
+      </div>
+    </footer>
+  </div>
+  <script src="/JS/preloader.js"></script>
+  <script src="JS/smooth_scroll.js"></script>
+  <script src="/JS/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/JS/vanilla.js"></script>
+</body>
+<script>
+  AOS.init();
+  VanillaTilt.init(document.querySelectorAll(".workshop-img"));
+  VanillaTilt.init(document.querySelectorAll(".aim-img"));
+  VanillaTilt.init(document.querySelectorAll(".dream-img"));
+</script>
+<!-- prevent right click inspect element -->
+<!-- <script>
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+</script> -->
+
+</html>
