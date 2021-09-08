@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap');
 
 $primary-light: #fff;
 $primary-dark: rgb(22, 22, 37);
 $light-bg-text-color: rgb(53, 53, 53);
 $dark-bg-text-color: rgb(224, 224, 224);
-$primary-font: "Rubik", sans-serif;
-$secondary-font: "Poppins", sans-serif;
+$primary-font: 'Rubik', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
 $button-text-color: rgb(255, 255, 255);
 $padding-lg: 5rem;
 $padding-sm: 0.5rem;
@@ -152,7 +152,7 @@ body {
     }
 
     .page-indicator::-ms-tooltip {
-      content: "scoll to top";
+      content: 'scoll to top';
     }
 
     .toggler {
@@ -231,18 +231,18 @@ body {
     display: grid;
     grid-column-gap: 0.5rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "top-left ." ". top-right";
+    grid-template-areas: 'top-left .' '. top-right';
 
     @include tablet() {
       padding-top: 90px;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-areas: "top-left" "top-right";
+      grid-template-areas: 'top-left' 'top-right';
     }
 
     @include mobile() {
       padding-top: 90px;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-areas: "top-left" "top-right";
+      grid-template-areas: 'top-left' 'top-right';
     }
 
     .top-left-section {
@@ -323,14 +323,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     grid-row-gap: 2rem;
-    grid-template-areas: "first workshop" "aim second" "third dream";
+    grid-template-areas: 'first workshop' 'aim second' 'third dream';
 
     li {
       font-size: 1.9rem;
       list-style: none;
 
       &::before {
-        content: "○";
+        content: '○';
         font-weight: lighter;
         padding-right: 1rem;
       }
@@ -339,7 +339,7 @@ body {
     @include tablet() {
       grid-row-gap: 1rem;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-areas: "first" "workshop" "second" "aim" "third" "dream";
+      grid-template-areas: 'first' 'workshop' 'second' 'aim' 'third' 'dream';
     }
 
     @include mobile() {
@@ -408,6 +408,22 @@ body {
 
     .dream-img {
       grid-area: dream;
+    }
+    .img-container {
+      height: 80%;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      @include mobile() {
+        height: 100%;
+      }
+      @include tablet() {
+        height: 100%;
+      }
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -696,7 +712,13 @@ body {
   }
 
   button {
-    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673
+    );
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
   }
 }
@@ -802,6 +824,9 @@ body {
   font-weight: 500;
   font-size: 50px;
   line-height: 75px;
+  @include mobile() {
+    line-height: 2rem;
+  }
 }
 
 .navbar {
