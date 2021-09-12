@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Designs/main.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="icon" type="image/png" href="assets/icons/itsnp.png" />
+
+  <title>ITSNP | Largest IT Community of Nepal</title>
+</head>
+
+<body>
+  <div class="preloader"></div>
+  <div class="main-wrapper">
+    <nav class="navbar">
+      <div class="itsnplogo">
+        <img src="/assets/icons/itsnp.png" alt="ITSNP_logo" />
+      </div>
+      <div class="itsnp-text">SNP</div>
+      <div class="page-indicator gradient-btn"><a href="https://www.facebook.com/groups/techforimpact" class="anchor"
+          target="_blank"><button>Home</button></a></div>
+      <div class="toggler" onclick="toggleMode()">
+        <div class="circle" id="circle1"></div>
+      </div>
+    </nav>
+    
+  </div>
+  <script src="/JS/preloader.js"></script>
+  <script src="JS/smooth_scroll.js"></script>
+  <script src="/JS/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/JS/vanilla.js"></script>
+</body>
+<script>
+  AOS.init();
+  VanillaTilt.init(document.querySelectorAll(".workshop-img"));
+  VanillaTilt.init(document.querySelectorAll(".aim-img"));
+  VanillaTilt.init(document.querySelectorAll(".dream-img"));
+</script>
+<!-- prevent right click inspect element -->
+<script>
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+</script>
+
+</html>
