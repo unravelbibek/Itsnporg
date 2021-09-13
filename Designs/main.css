@@ -1052,55 +1052,51 @@ body {
 .border {
   border: 4px solid white;
 }
-/*# sourceMappingURL=main.css.map */
 
-/* 404 page */
-
+/* 404 page styling */
 .main-wrapper .page-404 {
   width: 100%;
   height: 100vh;
+  display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
   place-items: center;
-}
-
-.main-wrapper .page-404 img {
-  width: 100%;
-}
-
-.main-wrapper .page-404 .big-text-404 {
-  margin-bottom: 2em;
-}
-
-.main-wrapper .page-404 .big-text-404 h1 {
-  line-height: .8;
-}
-
-.main-wrapper .page-404 .big-text-404 h1:first-child {
-  color: #d10069;
-}
-
-.main-wrapper .page-404 .go-home-404 {
-  margin-top: 2em;
-}
-
-.main-wrapper .page-404 .go-home-404 button {
-  font-size: 1.5rem;
-  padding:1rem 2.5rem !important;
 }
 
 @media (max-width: 940px) {
   .main-wrapper .page-404 {
     padding-top: 90px;
     -ms-grid-columns: (1fr)[1];
-  grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
+.main-wrapper .page-404 img {
+  width: 100%;
+}
+
+.main-wrapper .page-404 h1 {
+  line-height: 0.8;
+}
+
+.main-wrapper .page-404 h1:first-child {
+  color: #d10069;
+}
+
+.main-wrapper .page-404 h1:nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+.main-wrapper .page-404 button {
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem !important;
+}
+
 @media (max-width: 640px) {
-  .main-wrapper .page-404 .go-home-404 button {
+  .main-wrapper .page-404 button {
     font-size: 1.1rem;
-    padding: .7rem 2rem;
+    padding: 0.7rem 2rem;
   }
 }
+/*# sourceMappingURL=main.css.map */
