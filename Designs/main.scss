@@ -871,6 +871,19 @@ body {
       padding-top: 90px;
       grid-template-columns: repeat(1, 1fr);
     }
+    .text-404 {
+      font-size: 12em;
+      font-weight: 900;
+      position: absolute;
+      left: 15%;
+      top: 10%;
+      z-index: 0;
+      color: rgba(146, 146, 146, 0.459);
+    }
+    .main-content {
+      position: relative;
+      z-index: 2;
+    }
     img {
       width: 100%;
     }

@@ -1072,6 +1072,21 @@ body {
   }
 }
 
+.main-wrapper .page-404 .text-404 {
+  font-size: 12em;
+  font-weight: 900;
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  z-index: 0;
+  color: rgba(146, 146, 146, 0.459);
+}
+
+.main-wrapper .page-404 .main-content {
+  position: relative;
+  z-index: 2;
+}
+
 .main-wrapper .page-404 img {
   width: 100%;
 }
