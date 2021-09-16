@@ -37,11 +37,22 @@
           box-sizing: border-box;
 }
 
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body {
   min-height: 100vh;
   background-color: #fff;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  max-width: 1440px;
 }
 
 .white .circle {
@@ -135,6 +146,7 @@ body {
   height: 80px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  max-width: 1440px;
 }
 
 .main-wrapper nav .page-indicator {
