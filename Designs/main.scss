@@ -81,7 +81,7 @@ body {
 
 .white {
   .circle {
-    animation: whitemode 1s ease-in-out 1;
+    // animation: whitemode 1s ease-in-out 1;
     transform: translateX(0) rotate(190deg);
     box-shadow: inset -12px 28px 0 1px gold;
   }
@@ -167,15 +167,18 @@ body {
       width: 60px;
       display: flex;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: all 0.5s ease;
       align-items: center;
+      position: relative;
 
       .circle {
+        position: absolute;
         height: 28px;
+        left: 0;
         width: 28px;
         border-radius: 50%;
         background-color: gold;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
       }
     }
   }
@@ -633,11 +636,11 @@ body {
 
     .toggler {
       overflow: hidden;
-
       .circle {
         background-color: rgb(22, 22, 37);
-        animation: darkmode 1s ease-in-out 1;
-        transform: translateX(0) rotate(190deg);
+        // animation: darkmode 1s ease-in-out 1;
+        left: 50%;
+        transform: rotate(70deg);
         box-shadow: inset -12px 5px 0 1px #c7c7c7;
       }
     }
@@ -650,43 +653,43 @@ body {
   }
 }
 
-@keyframes darkmode {
-  0% {
-    transform: translateX(0);
-    box-shadow: inset -12px 28px 0 0px gold;
-  }
+// @keyframes darkmode {
+//   0% {
+//     transform: translateX(0);
+//     box-shadow: inset -12px 28px 0 0px gold;
+//   }
 
-  50% {
-    transform: translateX(33px) rotate(35deg);
-    box-shadow: inset -12px 28px 0 3px gold;
-  }
+//   50% {
+//     transform: translateX(33px) rotate(35deg);
+//     box-shadow: inset -12px 28px 0 3px gold;
+//   }
 
-  100% {
-    transform: translateX(0) rotate(190deg);
-    box-shadow: inset -12px 5px 0 1px #c7c7c7;
-  }
-}
+//   100% {
+//     transform: translateX(0) rotate(190deg);
+//     box-shadow: inset -12px 5px 0 1px #c7c7c7;
+//   }
+// }
 
-@keyframes whitemode {
-  0% {
-    background-color: rgb(102, 102, 102);
+// @keyframes whitemode {
+//   0% {
+//     background-color: rgb(102, 102, 102);
 
-    transform: translateX(0) rotate(190deg);
-    box-shadow: inset -12px 5px 0 1px #c7c7c7;
-  }
+//     transform: translateX(0) rotate(190deg);
+//     box-shadow: inset -12px 5px 0 1px #c7c7c7;
+//   }
 
-  50% {
-    background-color: rgb(102, 102, 102);
+//   50% {
+//     background-color: rgb(102, 102, 102);
 
-    transform: translateX(33px) rotate(35deg);
-    box-shadow: inset -12px 5px 0 1px #c7c7c7;
-  }
+//     transform: translateX(33px) rotate(35deg);
+//     box-shadow: inset -12px 5px 0 1px #c7c7c7;
+//   }
 
-  100% {
-    transform: translateX(0) rotate(190deg);
-    box-shadow: none, inset -12px 28px 0 1px gold;
-  }
-}
+//   100% {
+//     transform: translateX(0) rotate(190deg);
+//     box-shadow: none, inset -12px 28px 0 1px gold;
+//   }
+// }
 
 .gradient-btn {
   button {

@@ -56,8 +56,6 @@ body {
 }
 
 .white .circle {
-  -webkit-animation: whitemode 1s ease-in-out 1;
-          animation: whitemode 1s ease-in-out 1;
   -webkit-transform: translateX(0) rotate(190deg);
           transform: translateX(0) rotate(190deg);
   -webkit-box-shadow: inset -12px 28px 0 1px gold;
@@ -165,20 +163,23 @@ body {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .main-wrapper nav .toggler .circle {
+  position: absolute;
   height: 28px;
+  left: 0;
   width: 28px;
   border-radius: 50%;
   background-color: gold;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .main-wrapper h1 {
@@ -785,10 +786,9 @@ body {
 
 .dark nav .toggler .circle {
   background-color: #161625;
-  -webkit-animation: darkmode 1s ease-in-out 1;
-          animation: darkmode 1s ease-in-out 1;
-  -webkit-transform: translateX(0) rotate(190deg);
-          transform: translateX(0) rotate(190deg);
+  left: 50%;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
   -webkit-box-shadow: inset -12px 5px 0 1px #c7c7c7;
           box-shadow: inset -12px 5px 0 1px #c7c7c7;
 }
@@ -798,94 +798,6 @@ body {
   color: #e0e0e0;
   -webkit-box-shadow: 2px 5px 10px gray -2px 5px 10px gray;
           box-shadow: 2px 5px 10px gray -2px 5px 10px gray;
-}
-
-@-webkit-keyframes darkmode {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-box-shadow: inset -12px 28px 0 0px gold;
-            box-shadow: inset -12px 28px 0 0px gold;
-  }
-  50% {
-    -webkit-transform: translateX(33px) rotate(35deg);
-            transform: translateX(33px) rotate(35deg);
-    -webkit-box-shadow: inset -12px 28px 0 3px gold;
-            box-shadow: inset -12px 28px 0 3px gold;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(190deg);
-            transform: translateX(0) rotate(190deg);
-    -webkit-box-shadow: inset -12px 5px 0 1px #c7c7c7;
-            box-shadow: inset -12px 5px 0 1px #c7c7c7;
-  }
-}
-
-@keyframes darkmode {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-box-shadow: inset -12px 28px 0 0px gold;
-            box-shadow: inset -12px 28px 0 0px gold;
-  }
-  50% {
-    -webkit-transform: translateX(33px) rotate(35deg);
-            transform: translateX(33px) rotate(35deg);
-    -webkit-box-shadow: inset -12px 28px 0 3px gold;
-            box-shadow: inset -12px 28px 0 3px gold;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(190deg);
-            transform: translateX(0) rotate(190deg);
-    -webkit-box-shadow: inset -12px 5px 0 1px #c7c7c7;
-            box-shadow: inset -12px 5px 0 1px #c7c7c7;
-  }
-}
-
-@-webkit-keyframes whitemode {
-  0% {
-    background-color: #666666;
-    -webkit-transform: translateX(0) rotate(190deg);
-            transform: translateX(0) rotate(190deg);
-    -webkit-box-shadow: inset -12px 5px 0 1px #c7c7c7;
-            box-shadow: inset -12px 5px 0 1px #c7c7c7;
-  }
-  50% {
-    background-color: #666666;
-    -webkit-transform: translateX(33px) rotate(35deg);
-            transform: translateX(33px) rotate(35deg);
-    -webkit-box-shadow: inset -12px 5px 0 1px #c7c7c7;
-            box-shadow: inset -12px 5px 0 1px #c7c7c7;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(190deg);
-            transform: translateX(0) rotate(190deg);
-    -webkit-box-shadow: none, inset -12px 28px 0 1px gold;
-            box-shadow: none, inset -12px 28px 0 1px gold;
-  }
-}
-
-@keyframes whitemode {
-  0% {
-    background-color: #666666;
-    -webkit-transform: translateX(0) rotate(190deg);
-            transform: translateX(0) rotate(190deg);
-    -webkit-box-shadow: inset -12px 5px 0 1px #c7c7c7;
-            box-shadow: inset -12px 5px 0 1px #c7c7c7;
-  }
-  50% {
-    background-color: #666666;
-    -webkit-transform: translateX(33px) rotate(35deg);
-            transform: translateX(33px) rotate(35deg);
-    -webkit-box-shadow: inset -12px 5px 0 1px #c7c7c7;
-            box-shadow: inset -12px 5px 0 1px #c7c7c7;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(190deg);
-            transform: translateX(0) rotate(190deg);
-    -webkit-box-shadow: none, inset -12px 28px 0 1px gold;
-            box-shadow: none, inset -12px 28px 0 1px gold;
-  }
 }
 
 .gradient-btn button {
