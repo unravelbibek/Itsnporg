@@ -52,7 +52,10 @@ body {
   background-color: #fff;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  max-width: 1440px;
+}
+
+* {
+  max-width: 2140px;
 }
 
 .white .circle {
@@ -144,7 +147,7 @@ body {
   height: 80px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  max-width: 1440px;
+  max-width: 100%;
 }
 
 .main-wrapper nav .page-indicator {
